@@ -840,6 +840,8 @@ export class RichText extends Component {
 						onTagNameChange={ onTagNameChange }
 						tagName={ Tagname }
 						onSyncDOM={ () => this.onChange( this.createRecord() ) }
+						value={ record }
+						onChange={ this.onChange }
 					/>
 				) }
 				{ isSelected && ! inlineToolbar && (
